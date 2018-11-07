@@ -2492,9 +2492,9 @@ actual:\n\
             return 0;
         }
 
-        println!("normalized {}:\n{}\n", kind, actual);
-        println!("expected {}:\n{}\n", kind, expected);
-        println!("diff of {}:\n", kind);
+        println!("normalized {:?}:\n{}\n", kind, actual);
+        println!("expected {:?}:\n{}\n", kind, expected);
+        println!("diff of {:?}:\n", kind);
 
         for diff in diff::lines(expected, actual) {
             match diff {
